@@ -12,6 +12,8 @@ import caldav
 import telegram
 from telegram.constants import ParseMode
 from jinja2 import Environment, FileSystemLoader
+import locale
+locale.setlocale(locale.LC_TIME, '')
 
 DEFAULT_LOG_LEVEL = 'INFO'
 log_level = os.environ.get('LOG_LEVEL', DEFAULT_LOG_LEVEL)
